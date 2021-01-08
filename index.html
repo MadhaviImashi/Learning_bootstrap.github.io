@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
     <title>Grab&Eat</title>
 </head>
 <body>
@@ -36,13 +37,6 @@
         </div>
       </div>
     </nav>
-    <!--link the j-query included bootstrap.js to enable some special bootstrap functions which are linked with js-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
-     integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" 
-     integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
-     <script src="js/bootstrap.js"></script>
     
                                   <!--A Heading with a background color-->
     <div class="row">
@@ -96,9 +90,113 @@
             </div>
         </div><!--food images set -->
 
+            <!--how to use bootstrap buttons-->
+            <br><br>
+        <div class="row">
+          different button colors
+          <div class="col-12">
+            <button class="btn btn-primary">btn1</button>
+            <button class="btn btn-secondary">btn2</button>
+            <button class="btn btn-info">btn3</button>
+            <button class="btn btn-warning">btn3</button>
+            <button class="btn btn-success">btn3</button>
+            <button class="btn btn-danger">btn3</button>
+            <button class="btn btn-light">btn3</button>
+            <button class="btn btn-dark">btn3</button>
+            <button class="btn btn-link">btn3</button>
+          </div>
+        </div>
+
+        <br><br><br>
+        <div class="row">
+          <div class="col-12">
+            Link as a button 
+            <a href="www.google.com" class="btn btn-info">Google</a>    <br><br>
+            Input type button(used in forms)
+            <input type="button" value="form-button" class="btn btn-info">
+          </div>
+        </div>
+     
+        <br><br><br>
+        <div class="row">
+          <div class="col-12">
+            buttons without background color
+            <button class="btn btn-outline-primary">btn1</button>
+            <button class="btn btn-outline-secondary">btn2</button>
+            <button class="btn btn-outline-info">btn3</button>
+            <button class="btn btn-outline-warning">btn3</button>
+            <button class="btn btn-outline-success">btn3</button>
+            <button class="btn btn-outline-danger">btn3</button>
+            <button class="btn btn-outline-light">btn3</button>
+            <button class="btn btn-outline-dark">btn3</button>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <button class="btn btn-info btn-lg">Large button</button>
+            <button class="btn btn-warning btn-sm">small btn</button>
+          </div>
+        </div>
+
+        <br><br>
+        innactive/dissabled button 
+        <button class="btn btn-danger " disabled="" >disabled btn</button>
+
+        <br><br>
+        button groups
+        <div class="btn-group" role="group">
+              <button class="btn btn-primary">btn1</button>
+              <button class="btn btn-secondary">btn2</button>
+              <button class="btn btn-info">btn3</button>
+              <button class="btn btn-warning">btn3</button>
+              <button class="btn btn-success">btn3</button>
+              <button class="btn btn-danger">btn3</button>
+              <button class="btn btn-light">btn3</button>
+              <button class="btn btn-dark">btn3</button>  
+        </div>
+
+        <br><br><br>
+        button group in vertically
+        <div class="btn-group-vertical" role="group">
+              <button class="btn btn-primary">btn1</button>
+              <button class="btn btn-secondary">btn2</button>
+              <button class="btn btn-info">btn3</button>
+              <button class="btn btn-warning">btn3</button>
+              <button class="btn btn-success">btn3</button>
+              <button class="btn btn-danger">btn3</button>
+              <button class="btn btn-light">btn3</button>
+              <button class="btn btn-dark">btn3</button>  
+        </div>
+
+        <br><br> click the below button to see how the modal is working <br>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#basicModal">
+            basic modal
+        </button><br><br>
+
     </div>
 
 
+                           <!--create a basic modal-->
+<!-- Modal -->
+<div class="modal fade" id="basicModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="basicModal">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 </body3
